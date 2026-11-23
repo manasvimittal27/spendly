@@ -70,11 +70,75 @@
     font-size: 1.1rem;
     font-weight: 600;
     padding: 1.1rem 2.5rem;
+    border: none;
     border-radius: 10px;
+    cursor: pointer;
     transition: background 0.2s;
 }
 
 .lh-btn:hover { background: var(--accent); }
+
+/* Video modal */
+
+.lh-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 200;
+    background: rgba(15, 15, 15, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+.lh-modal[hidden] { display: none; }
+
+.lh-modal-dialog {
+    position: relative;
+    width: 100%;
+    max-width: 880px;
+    background: var(--paper-card);
+    border-radius: var(--radius-md);
+    padding: 1.5rem;
+}
+
+.lh-modal-close {
+    position: absolute;
+    top: 0.6rem;
+    right: 0.75rem;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    line-height: 1;
+    color: var(--ink-muted);
+    cursor: pointer;
+}
+
+.lh-modal-close:hover { color: var(--ink); }
+
+.lh-modal-title {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    color: var(--ink);
+    margin-bottom: 1rem;
+    padding-right: 2rem;
+}
+
+.lh-video {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    background: #000;
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+}
+
+.lh-video iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
 
 /* Dashboard preview */
 
