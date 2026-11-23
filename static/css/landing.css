@@ -1,0 +1,189 @@
+/* ------------------------------------------------------------------ */
+/* Landing hero (lh-*)                                                 */
+/* ------------------------------------------------------------------ */
+
+.lh-hero {
+    padding: 4.5rem 2rem 5rem;
+    text-align: center;
+}
+
+.lh-inner {
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.lh-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: #e6f4ed;
+    border: 1px solid #bfe3d0;
+    color: #2b6b50;
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 0.5rem 1.1rem;
+    border-radius: 999px;
+    margin-bottom: 2.25rem;
+}
+
+.lh-badge-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #3d9970;
+}
+
+.lh-title {
+    font-family: var(--font-body);
+    font-size: clamp(2.75rem, 6vw, 4.5rem);
+    font-weight: 600;
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+    color: var(--ink);
+}
+
+.lh-title-accent {
+    display: block;
+    color: #4a9d78;
+}
+
+.lh-subtitle {
+    font-size: clamp(1.1rem, 2vw, 1.35rem);
+    line-height: 1.6;
+    color: var(--ink-muted);
+    max-width: 640px;
+    margin: 1.75rem auto 2.75rem;
+}
+
+.lh-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.lh-btn {
+    display: inline-block;
+    background: #111;
+    color: #fff;
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 1.1rem 2.5rem;
+    border-radius: 10px;
+    transition: background 0.2s;
+}
+
+.lh-btn:hover { background: var(--accent); }
+
+/* Dashboard preview */
+
+.lh-preview {
+    max-width: 1000px;
+    margin: 4.5rem auto 0;
+    background: var(--paper-warm);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 1.75rem;
+    text-align: left;
+}
+
+.lh-window-dots {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.lh-window-dots span {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+.lh-dot-red { background: #e8a09a; }
+.lh-dot-yellow { background: #f2c96d; }
+.lh-dot-green { background: #a8dcc4; }
+
+.lh-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.lh-stat {
+    background: var(--paper-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem 1.75rem;
+}
+
+.lh-stat-label {
+    display: block;
+    font-size: 1rem;
+    color: var(--ink-faint);
+    margin-bottom: 0.4rem;
+}
+
+.lh-stat-value {
+    display: block;
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: var(--ink);
+    line-height: 1.2;
+}
+
+.lh-stat-note {
+    display: block;
+    font-size: 0.95rem;
+    margin-top: 0.35rem;
+    color: var(--ink-faint);
+}
+
+.lh-note-down { color: #d64c3c; }
+.lh-note-good { color: #3d9970; }
+
+.lh-categories {
+    background: var(--paper-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem 1.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+
+.lh-cat-row {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.lh-cat-name {
+    font-size: 1.1rem;
+    color: var(--ink-soft);
+    text-align: right;
+}
+
+.lh-cat-track {
+    height: 10px;
+    background: #f0efea;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.lh-cat-bar {
+    height: 100%;
+    border-radius: 999px;
+}
+
+.lh-bar-food { width: 72%; background: #e8a444; }
+.lh-bar-travel { width: 48%; background: #4a86d8; }
+.lh-bar-bills { width: 38%; background: #8a6fd6; }
+
+@media (max-width: 700px) {
+    .lh-stats { grid-template-columns: 1fr; }
+    .lh-preview { padding: 1.25rem; }
+    .lh-btn { width: 100%; text-align: center; }
+}
